@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/style.css">
+    <title>Internet usage form</title>
+</head>
+<body>
+    <div id="wrapper">
+            <form id="survey-form">
+                <h1 id="title">Internet usage form</h1>
+                <p id="description">Please provide information on your internet usage knowledge and preferences.</p><br> 
+                <label for="name" id="name-label">Enter your name:</label><br>
+                <input type="text" id="name" name="name" size="55" required placeholder="Write here">
+                <br></br>
+                <label for="email" id="email-label">Enter your email:</label><br>
+                <input type="email" id="email" name="email" size="55" required placeholder="Write here">
+                <br></br>
+                <label for="age" id="number-label">Enter your age:</label><br>
+                <input type="number" id="number" name="age" min="14" max="90" size="55" placeholder="Write here">
+                <br></br>
+                <label for="dropdown" id="dropdown-label">Pick your desired device:</label><br>
+                <select id="dropdown" name="dropdown">
+                    <option value="laptop" selected="selected">Laptop</option>
+                    <option value="computer">Computer</option>
+                    <option value="phone">Phone</option>
+                </select>
+                <br><br><hr><br>
+                <p class="checkbox-radio">Choose which OS you're comfortable with:</p>
+                <input type="checkbox" id="checkbox-windows" name="checkbox-buttons-group" value="Windows">
+                <label for="checkbox-windows">Windows</label><br>
+                <input type="checkbox" id="checkbox-linux" name="checkbox-buttons-group" value="Linux">
+                <label for="checkbox-linux"> Linux</label><br>
+                <input type="checkbox" id="checkbox-macos" name="checkbox-buttons-group" value="MacOS">
+                <label for="checkbox-macos"> MacOS</label><br><br>
+                <p class="checkbox-radio">Pick your experience level with computers:</p>
+                 <input type="radio" id="entry" name="radio-group" value="entry-level">
+                 <label for="entry">Entry level</label><br>
+                 <input type="radio" id="Intermediate" name="radio-group" value="Intermediate">
+                 <label for="Intermediate">Intermediate</label><br>
+                 <input type="radio" id="mid-level" name="radio-group" value="mid-level">
+                 <label for="mid-level">Mid-level</label><br>
+                 <input type="radio" id="advanced" name="radio-group" value="advanced">
+                 <label for="advanced">Advanced</label>
+                 <br><br><hr><br>
+                 <p>Can you describe how you are using the internet?</p>
+                 <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+                <br>
+                <input type="submit" value="Submit" id="submit">
+            </form>
+    </div>
+</body>
+</html>
